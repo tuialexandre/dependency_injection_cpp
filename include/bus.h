@@ -10,11 +10,11 @@ class Bus : public IVehicle {
     Bus() {}
     ~Bus() {}
 
-    void SetSpeed(const double& speed);
-    const double GetSpeed();
-    void SetSteerAngle(const double& angle);
-    const double GetSteerAngle();
-    const std::string GetId();
+    void SetSpeed(const double& speed) override;
+    const double GetSpeed() override;
+    void SetSteerAngle(const double& angle) override;
+    const double GetSteerAngle() override;
+    const std::string GetId() override;
 
    private:
     double speed_ = 0.0;
